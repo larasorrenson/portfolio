@@ -22,7 +22,10 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: ng build --base-href "https://larasorrenson.github.io/portfolio/"
+        run: ng build --prod --base-href /portfolio/
+
+      - name: Copy index.html to 404.html
+        run: cp dist/portfolio/browser/index.html dist/portfolio/browser/404.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
