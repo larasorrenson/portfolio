@@ -1,0 +1,46 @@
+<div class="home-container">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Hello, I'm James Buckley</h1>
+      <p>
+        A passionate filmmaker and storyteller, dedicated to capturing and creating compelling narratives. Let's bring
+        your vision to life!
+      </p>
+    </div>
+  </section>
+
+  <!-- Showreel -->
+  <div class="showreel">
+    <iframe playsinline src="https://www.youtube.com/embed/OxuME20pZUE?autoplay=1&mute=1&rel=0&enablejsapi=1"
+      frameborder="0" allow="autoplay; encrypted-media; clipboard-write; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Highlights Section -->
+  <section class="highlights-section">
+    <h2>Highlights</h2>
+    <div class="carousel-wrapper">
+      <button class="carousel-nav left" (click)="scrollCarousel('left')">&#10094;</button>
+
+      <div class="carousel" #carousel>
+        <div class="carousel-item">
+          <img src="assets/images/image1.jpg" alt="Highlight 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/image1.jpg" alt="Highlight 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/image1.jpg" alt="Highlight 3" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/image1.jpg" alt="Highlight 4" />
+        </div>
+      </div>
+
+      <button class="carousel-nav right" (click)="scrollCarousel('right')">&#10095;</button>
+    </div>
+  </section>
+
+  <app-footer></app-footer>
+</div>

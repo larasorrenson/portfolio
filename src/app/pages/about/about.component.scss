@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;  /* Dark background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* About Me Section */
+  .about-me {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+  }
+  
+  .about-me-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: rgb(3, 119, 18); /* Accent color */
+  }
+  
+  /* Bio Section */
+  .bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .bio-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .bio-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    color: #bbb; /* Light grey text */
+  }
+  
+  /* Skills Section */
+  .skills {
+    margin-bottom: 3rem;
+  }
+  
+  .skills h2 {
+    font-size: 2.5rem;
+    color: rgb(3, 119, 18);
+  }
+  
+  .skills ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .skills li {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Projects Section */
+  .projects {
+    margin-bottom: 3rem;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    color: rgb(3, 119, 18);
+  }
+  
+  .projects ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .projects li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Education Section */
+  .education {
+    margin-bottom: 3rem;
+  }
+  
+  .education h2 {
+    font-size: 2.5rem;
+    color: rgb(3, 119, 18);
+  }
+  
+  .education p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  

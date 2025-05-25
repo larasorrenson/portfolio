@@ -1,0 +1,42 @@
+<section class="about-me">
+    <!-- Title Section -->
+    <h1 *ngIf="titleVisible" [@fadeIn] class="about-me-title">About Me</h1>
+  
+    <!-- Bio Section -->
+    <div class="bio" *ngIf="bioVisible" [@fadeIn] >
+      <img src="assets/images/image1.jpg" alt="Your Name" class="bio-image" />
+      <div class="bio-text">
+        <p>Hello! I'm [Your Name], a passionate film student currently studying at [University/Film School Name]. I specialize in [Cinematography/Directing/Editing], but I also have experience in [mention other areas]. I'm always looking for new projects and collaborations!</p>
+      </div>
+    </div>
+  
+    <!-- Skills Section -->
+    <div class="skills" *ngIf="skillsVisible" [@fadeIn] >
+      <h2>Skills</h2>
+      <ul>
+        <li>Cinematography</li>
+        <li>Film Editing</li>
+        <li>Directing</li>
+        <li>Screenwriting</li>
+        <li>Sound Design</li>
+      </ul>
+    </div>
+  
+    <!-- Projects Section -->
+    <div class="projects" *ngIf="projectsVisible" [@fadeIn] >
+      <h2>Film Projects</h2>
+      <ul>
+        <li><strong>Project Name 1</strong> - Description, Role (e.g., Director)</li>
+        <li><strong>Project Name 2</strong> - Description, Role</li>
+      </ul>
+    </div>
+  
+    <!-- Education Section -->
+    <div class="education" *ngIf="educationVisible" [@fadeIn] >
+      <h2>Education</h2>
+      <p>Bachelor of Arts in Film Studies from [University/Film School Name]</p>
+    </div>
+  </section>
+  
+  <app-footer></app-footer>
+  

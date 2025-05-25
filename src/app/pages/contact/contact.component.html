@@ -1,0 +1,29 @@
+<div class="contact-container">
+  <div class="contact-text">
+    <h1>Let's Get in Touch</h1>
+    <p>Send me a message if you'd like to work together or have a question. Please include your name, email, and
+      message.</p>
+  </div>
+
+  <div class="contact-form">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <input type="text" formControlName="name" placeholder="Your Name" [class.invalid]="isInvalid('name')" />
+      <div class="error" *ngIf="isInvalid('name')">
+        Name is required.
+      </div>
+
+      <input type="email" formControlName="email" placeholder="Your Email" [class.invalid]="isInvalid('email')" />
+      <div class="error" *ngIf="isInvalid('email')">
+        A valid email is required.
+      </div>
+
+      <textarea formControlName="message" placeholder="Your Message" [class.invalid]="isInvalid('message')"></textarea>
+
+      <button type="submit" class="cta-button" #contactBtnRef>
+        <span class="button-text">Send Message</span>
+        <span class="spotlight" #contactSpotlightRef></span>
+      </button>
+    </form>
+
+  </div>
+</div>
