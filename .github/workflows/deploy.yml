@@ -27,7 +27,8 @@ jobs:
           ls -l dist/portfolio
 
       - name: Copy index.html to 404.html
-        run: cp dist/portfolio/index.html dist/portfolio/404.html
+        run: cp dist/portfolio/browser/index.html dist/portfolio/browser/404.html
+
 
       - name: Deploy to GitHub Pages
         run: npx angular-cli-ghpages --dir=dist/portfolio
