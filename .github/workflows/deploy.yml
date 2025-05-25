@@ -22,7 +22,9 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build -- --configuration=production
+        run: |
+          npm run build -- --configuration=production
+          ls -l dist/portfolio
 
       - name: Copy index.html to 404.html
         run: cp dist/portfolio/index.html dist/portfolio/404.html
