@@ -25,7 +25,7 @@ jobs:
         run: npm run build -- --configuration=production
 
       - name: Copy index.html to 404.html
-        run: cp dist/<your-app-name>/index.html dist/<your-app-name>/404.html
+        run: cp dist/portfolio/index.html dist/portfolio/404.html
 
       - name: Deploy to GitHub Pages
         run: npx angular-cli-ghpages --dir=dist/portfolio
