@@ -22,13 +22,10 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: |
-          npm run build -- --configuration=production
-          ls -l dist/portfolio
+        run: npm run build -- --configuration=production
 
       - name: Copy index.html to 404.html
         run: cp dist/portfolio/browser/index.html dist/portfolio/browser/404.html
 
-
       - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist/portfolio
+        run: npx angular-cli-ghpages --dir=dist/portfolio/browser
