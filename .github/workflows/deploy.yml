@@ -28,4 +28,7 @@ jobs:
         run: cp dist/portfolio/browser/index.html dist/portfolio/browser/404.html
 
       - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist/portfolio/browser
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/portfolio/browser
