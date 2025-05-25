@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles (styles.scss) or specific component SCSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Add your preferred font */
+  }
+  
+  main {
+    margin-top: 50px; /* Default value for margin-top for larger screens */
+    background-color:#555;
+  }
+  
+  /* Your existing navbar styles remain the same */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .navbar .logo a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar .nav-links a:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .navbar .nav-links .active {
+    background-color: rgb(3, 119, 18);
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack navbar items vertically on small screens */
+      padding: 1rem; /* Reduce padding */
+    }
+  
+    .navbar .nav-links {
+      flex-direction: column; /* Stack links vertically */
+      gap: 1rem; /* Add space between links */
+      align-items: center; /* Center align the links */
+    }
+  
+    /* Adjust margin-top for smaller screens to accommodate the navbar */
+    main {
+      margin-top: 100px; /* Increase the margin-top to fit the navbar height on smaller screens */
+    }
+  }
+  
