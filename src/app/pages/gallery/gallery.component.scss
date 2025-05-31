@@ -1,55 +1,86 @@
-.custom-image-slider {
+.gallery {
+  padding: 2rem;
+  color: black;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; // default mobile: one column
+    gap: 2rem;
+    padding: 0 1rem;
+    padding-bottom: 20px;
+
+    @media (min-width: 600px) {
+      grid-template-columns: repeat(2, 1fr); // two columns on tablets and up
+      padding: 0 2rem;
+      padding-bottom: 20px;
+    }
+
+    @media (min-width: 1024px) {
+      padding: 0 4rem;
+      padding-bottom: 20px;
+    }
+  }
+
+  .project-card {
     position: relative;
     width: 100%;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
-    height: 0;
-    padding-bottom: 75%; /* Adjust this value according to your image aspect ratio */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    &:hover .overlay {
+      opacity: 1;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .type {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+
+    .roles {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
   }
-
-  .slider-before,
-  .slider-after {
-    position: absolute;
-    width: 100%;
-    display: block;
-    top: 0;
-    left: 0;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .slider-after {
-    overflow: hidden;
-  }
-
-  .slider-handle {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 4px;
-    height: 100%;
-    background-color: #fff;
-    cursor: ew-resize;
-  }
-
-.slider-handle::before,
-.slider-handle::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 0;
-  height: 0;
-  border-top: 12px solid transparent;
-  border-bottom: 12px solid transparent;
-  cursor: ew-resize;
-  transition: all 0.2s ease-out; /* Add transition property */
-}
-
-.slider-handle::before {
-  left: -24px;
-  border-right: 16px solid #fff;
-}
-
-.slider-handle::after {
-  right: -24px;
-  border-left: 16px solid #fff;
 }

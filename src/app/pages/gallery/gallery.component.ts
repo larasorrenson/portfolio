@@ -1,19 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FooterComponent } from '../../footer/footer.component';
-import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { ImageSliderComponent } from '../../image-slider/image-slider.component';
+import { RouterModule } from '@angular/router';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-gallery',
   standalone: true,
   imports: [
     CommonModule,
-    FormsModule,
     FooterComponent,
-    ImageSliderComponent
+    RouterModule,
+    HttpClientModule
   ],
   templateUrl: './gallery.component.html',
-  styleUrl: './gallery.component.scss'
+  styleUrls: ['./gallery.component.scss']
 })
-export class GalleryComponent {}
+export class GalleryComponent implements OnInit {
+  projects: any[] = [];
+
+  constructor(private http: HttpClient) {}
+
+  ngOnInit(): void {
+    this.http.get<any[]>('assets/data/projects.json').subscribe((data) => {
+      this.projects = data;
+    });
+  }
+}

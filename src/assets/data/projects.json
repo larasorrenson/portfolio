@@ -1,0 +1,48 @@
+[
+  {
+    "id": "project-1",
+    "title": "When Hippos Fly",
+    "type": "Stop Motion Film",
+    "roles": "Director, Writer, Producer, Cinematographer, Editor",
+    "synopsis": "When Hippos Fly is a short stop-motion experimental film that follows the story of Allan, a flying hippopotamus who has just crashed in a field. Allan brushes himself off and fixes up his wings before optimistically continuing his journey. However, as our subject sets off, in the distance, he hears a roar from the heavens, as a storm cloud grows near.",
+    "image": "assets/images/colourgrading/colour_SCARY.png",
+    "gallery": [
+      "assets/images/colourgrading/colour_SCARYCG.png",
+      "assets/images/colourgrading/colour_SCARY.png"
+    ],
+    "link": "https://www.youtube.com/embed/Pz1meLOsFXU?si=KfPC-PM4oAMZz80Z"
+  },
+  {
+    "id": "project-2",
+    "title": "Lights Out",
+    "type": "Short Film",
+    "roles": "Editor, Sound Designer",
+    "synopsis": "A chilling tale of shadows and silence.",
+    "image": "assets/images/colourgrading/colour_SCARY.png",
+    "gallery": [
+      "assets/images/colourgrading/colour_SCARYCG.png",
+      "assets/images/colourgrading/colour_SCARY.png"
+    ],
+    "link": ""
+  },
+  {
+    "id": "project-3",
+    "title": "Running Out of Love",
+    "type": "Music Video",
+    "roles": "Co-producer, Director of Photography, Editor",
+    "synopsis": "Running Out of Love, directed by Joely Riordan, required us to produce a music video for a musician. This project taught me the importance of creative collaboration when working for a client. From scheduling to formulating the narrative, communication with our client was key to ensuring the creative outcome was what both parties wanted to work towards. The narrative follows our musician in a toxic relationship on the brink of collapse as she’s about to perform on stage. Suddenly her boyfriend cancels last-minute, failing to turn up for her performance. As a result, our artist is forced to expel her frustration and disappointment into her performance of her song ‘Running Out of Love’.",
+    "image": "",
+    "gallery": [],
+    "link": ""
+  },
+  {
+    "id": "project-4",
+    "title": "Paddington House",
+    "type": "Mockumentary",
+    "roles": "Director, Writer, Editor, Actor",
+    "synopsis": "Paddington House is a pilot episode designed for a short-web series that follows the residents of a sharehouse and the struggles they must face when living together. The most challenging aspect of making this film was our heavy reliance on improvisation. I had created a rough screenplay for key plot points I wanted to shoot, but left it up to the actors' improvisation to determine how these scenes would develop and resolve. To effectively achieve this I decided to develop the backstories for each character heavily, giving them very clear personalities and strong differing beliefs, so that when it came to the performance, my co-star James Patino and I, could easily think, how would my character respond in this situation?",
+    "image": "",
+    "gallery": [],
+    "link": ""
+  }
+]
