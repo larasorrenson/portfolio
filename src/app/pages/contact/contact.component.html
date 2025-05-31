@@ -23,6 +23,9 @@
         <span class="button-text">Send Message</span>
         <span class="spotlight" #contactSpotlightRef></span>
       </button>
+      <div class="success-message" *ngIf="success">
+        Thanks! Your message has been sent.
+      </div>
     </form>
 
   </div>

@@ -23,7 +23,7 @@
   line-height: 1.6;
 }
 
-/* Showreel Video */
+/* Showreel */
 .showreel {
   display: flex;
   justify-content: center;
@@ -32,7 +32,7 @@
 
   iframe {
     width: 100%;
-    max-width: 1200px; // Increased max width
+    max-width: 1200px;
     aspect-ratio: 16 / 9;
     height: auto;
     border: none;
@@ -40,15 +40,20 @@
   }
 }
 
-
+/* Highlights Section */
 .highlights-section {
   text-align: center;
   margin: 3rem 0;
 
-  h2 {
-    font-size: 2rem;
-    font-weight: 300;
-    margin-bottom: 1.5rem;
+  .highlights-link {
+    text-decoration: none;
+    color: black;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+    }
   }
 }
 
@@ -75,11 +80,37 @@
 .carousel-item {
   flex: 0 0 auto;
   width: 300px;
+  transition: transform 0.3s ease;
 
   img {
     width: 100%;
     height: auto;
     border-radius: 4px;
+  }
+
+  &.view-all-card {
+    background-color: #dfeee3;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    .view-all-content {
+      font-size: 1.1rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    &:hover {
+      background-color: rgb(145, 180, 149);
+      color: white;
+    }
   }
 }
 
@@ -106,5 +137,85 @@
   @media (max-width: 768px) {
     font-size: 1.5rem;
     padding: 0.3rem 0.8rem;
+  }
+}
+
+.view-all-wrapper {
+  margin-top: 1.5rem;
+
+  .view-all-button {
+    background-color: rgb(145, 180, 149);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: rgb(96, 121, 99);
+    }
+  }
+}
+
+/* Color Grading Section */
+.before-after-section {
+  text-align: center;
+  padding: 4rem 2rem;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+
+  .grading-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+
+    app-image-slider {
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+  }
+}
+
+.project-card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+
+  .project-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+
+  &:hover .project-overlay {
+    opacity: 1;
   }
 }

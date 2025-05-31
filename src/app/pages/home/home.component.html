@@ -19,47 +19,57 @@
 
   <!-- Highlights Section -->
   <section class="highlights-section">
-    <h2>Highlights</h2>
+    <a class="highlights-link">
+      <h2>Highlights</h2>
+    </a>
+
     <div class="carousel-wrapper">
       <button class="carousel-nav left" (click)="scrollCarousel('left')">&#10094;</button>
 
       <div class="carousel" #carousel>
-        <div class="carousel-item">
-          <img src="assets/images/image1.jpg" alt="Highlight 1" />
+        <div class="carousel-item project-card" *ngFor="let project of projects" (click)="navToProject(project.link)">
+          <img [src]="project.image" [alt]="project.name" />
+          <div class="project-overlay">
+            <p>{{ project.name }}</p>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="assets/images/image1.jpg" alt="Highlight 2" />
-        </div>
-        <div class="carousel-item">
-          <img src="assets/images/image1.jpg" alt="Highlight 3" />
-        </div>
-        <div class="carousel-item">
-          <img src="assets/images/image1.jpg" alt="Highlight 4" />
+
+        <!-- View All Card -->
+        <div class="carousel-item view-all-card" (click)="navToGallery()">
+          <div class="view-all-content">
+            <p>View Full Portfolio</p>
+            <span>&#10140;</span>
+          </div>
         </div>
       </div>
 
       <button class="carousel-nav right" (click)="scrollCarousel('right')">&#10095;</button>
     </div>
+
+    <!-- Second View All Link -->
+    <div class="view-all-wrapper">
+      <a class="view-all-button" (click)="navToGallery()">View All</a>
+    </div>
   </section>
 
-  <div class="before-after-section">
+  <!-- Color Grading Section -->
+  <section class="before-after-section">
     <h2>Color Grading</h2>
 
-    <app-image-slider
-      [before]="'assets/images/colourgrading/colour_INCAR.png'"
-      [after]="'assets/images/colourgrading/colour_INCARCG.png'">
-    </app-image-slider>
+    <div class="grading-grid">
+      <app-image-slider [before]="'assets/images/colourgrading/colour_INCAR.png'"
+        [after]="'assets/images/colourgrading/colour_INCARCG.png'">
+      </app-image-slider>
 
-    <app-image-slider
-      [before]="'assets/images/colourgrading/colour_MS.png'"
-      [after]="'assets/images/colourgrading/colour_MSCG.png'">
-    </app-image-slider>
+      <app-image-slider [before]="'assets/images/colourgrading/colour_MS.png'"
+        [after]="'assets/images/colourgrading/colour_MSCG.png'">
+      </app-image-slider>
 
-    <app-image-slider
-      [before]="'assets/images/colourgrading/colour_SCARY.png'"
-      [after]="'assets/images/colourgrading/colour_SCARYCG.png'">
-    </app-image-slider>
-  </div>
+      <app-image-slider [before]="'assets/images/colourgrading/colour_SCARY.png'"
+        [after]="'assets/images/colourgrading/colour_SCARYCG.png'">
+      </app-image-slider>
+    </div>
+  </section>
 
   <app-footer></app-footer>
 </div>

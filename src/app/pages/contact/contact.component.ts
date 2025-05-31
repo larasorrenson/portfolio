@@ -17,7 +17,7 @@ export class ContactComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('contactSpotlightRef') contactSpotlightRef!: ElementRef<HTMLSpanElement>;
   private cleanupListeners: (() => void) | null = null;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.form = this.fb.group({
@@ -73,6 +73,8 @@ export class ContactComponent implements OnInit, AfterViewInit, OnDestroy {
     return !!(control && control.invalid && (control.touched || control.dirty || this.submitted));
   }
 
+  success = false;
+
   submit(): void {
     this.submitted = true;
 
@@ -91,6 +93,7 @@ export class ContactComponent implements OnInit, AfterViewInit, OnDestroy {
       if (response.ok) {
         this.form.reset();
         this.submitted = false;
+        this.success = true;
       } else {
         console.log('Failed to send message.');
       }
