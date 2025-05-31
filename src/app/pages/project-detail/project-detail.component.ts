@@ -21,7 +21,10 @@ export class ProjectDetailComponent implements OnInit {
     private router: Router,
     private projectService: ProjectService,
     private sanitizer: DomSanitizer
-  ) {}
+  ) { }
+
+  prevProject?: Project;
+  nextProject?: Project;
 
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
@@ -32,7 +35,18 @@ export class ProjectDetailComponent implements OnInit {
           this.safeVideoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(p.link);
         }
       });
+
+      this.projectService.getAdjacentProjects(id).subscribe(adj => {
+        this.prevProject = adj.prev;
+        this.nextProject = adj.next;
+      });
     }
+  }
+
+  navigateToProject(id: string) {
+    this.router.navigate(['/project', id]).then(() => {
+      window.location.reload();
+    });
   }
 
   goBack() {

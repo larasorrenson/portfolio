@@ -28,4 +28,16 @@ export class ProjectService {
       map(projects => projects.find(p => p.id === id))
     );
   }
+
+  getAdjacentProjects(currentId: string): Observable<{ prev?: Project; next?: Project }> {
+    return this.getAllProjects().pipe(
+      map(projects => {
+        const index = projects.findIndex(p => p.id === currentId);
+        return {
+          prev: index > 0 ? projects[index - 1] : undefined,
+          next: index < projects.length - 1 ? projects[index + 1] : undefined
+        };
+      })
+    );
+  }
 }

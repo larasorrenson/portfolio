@@ -1,13 +1,13 @@
 <section class="project-detail" *ngIf="project">
     <div class="header-image" [ngStyle]="{ 'background-image': 'url(' + project.image + ')' }">
         <div class="overlay">
-            <button class="back-button" (click)="goBack()">← Back to Portfolio</button>
             <h1 class="title">{{ project.title }}</h1>
             <p class="type">{{ project.type }}</p>
         </div>
     </div>
 
     <div class="content">
+        <button class="back-button" (click)="goBack()">Back to Portfolio</button>
         <p class="roles"><strong>Roles:</strong> {{ project.roles }}</p>
         <p class="synopsis">{{ project.synopsis }}</p>
 
@@ -25,6 +25,15 @@
                 <img *ngFor="let img of project.gallery" [src]="img" [alt]="project.title" />
             </div>
         </div>
+    </div>
+
+    <div class="project-nav">
+        <button *ngIf="prevProject" class="button" (click)="navigateToProject(prevProject.id)">
+            ← {{ prevProject.title }}
+        </button>
+        <button *ngIf="nextProject" class="button" (click)="navigateToProject(nextProject.id)">
+            {{ nextProject.title }} →
+        </button>
     </div>
 
     <app-footer></app-footer>
