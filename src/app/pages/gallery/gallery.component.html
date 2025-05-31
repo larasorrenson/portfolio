@@ -1,0 +1,22 @@
+<!-- gallery.component.html -->
+<section class="gallery">
+  <h1>Gallery</h1>
+
+  <div class="before-after-container">
+    <div class="after-image" [ngStyle]="{ width: afterImageWidth + '%' }">
+      <img [src]="afterImage" alt="After Image" />
+    </div>
+
+    <img [src]="beforeImage" class="before-image" alt="Before Image" />
+
+    <input
+      type="range"
+      class="slider"
+      min="0"
+      max="100"
+      [(ngModel)]="afterImageWidth"
+    />
+  </div>
+
+  <app-footer></app-footer>
+</section>

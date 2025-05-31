@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #111;
+  background-color: #F0F4F8;
   color: white;
   position: fixed;
   width: 100%;
@@ -16,7 +16,7 @@
 }
 
 .navbar .logo a {
-  color: white;
+  color: black;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -34,21 +34,22 @@
 }
 
 .nav-links a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 1rem;
   padding: 0.5rem;
-  border-radius: 5px;
+  border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-links a:hover {
-  background-color: #555;
+  background-color: #747474;
   color: #fff;
 }
 
 .nav-links .active {
-  background-color: rgb(3, 119, 18);
+  background-color: rgb(145, 180, 149);
+  color: black;
 }
 
 .hamburger {
@@ -67,7 +68,7 @@
     height: 3px;
     width: 100%;
     background-color: white;
-    border-radius: 2px;
+    border-radius: 0;
   }
 }
 

@@ -1,0 +1,40 @@
+.before-after-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow: hidden;
+
+  .before-image,
+  .after-image img {
+    width: 100%;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .after-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .after-image img {
+    position: relative;
+    z-index: 2;
+  }
+
+  .slider {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 80%;
+    cursor: ew-resize;
+    opacity: 0.9;
+  }
+}
