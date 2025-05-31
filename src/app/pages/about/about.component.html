@@ -1,42 +1,23 @@
-<section class="about-me">
-    <!-- Title Section -->
-    <h1 *ngIf="titleVisible" [@fadeIn] class="about-me-title">About Me</h1>
-  
-    <!-- Bio Section -->
-    <div class="bio" *ngIf="bioVisible" [@fadeIn] >
-      <img src="assets/images/image1.jpg" alt="Your Name" class="bio-image" />
-      <div class="bio-text">
-        <p>Hello! I'm [Your Name], a passionate film student currently studying at [University/Film School Name]. I specialize in [Cinematography/Directing/Editing], but I also have experience in [mention other areas]. I'm always looking for new projects and collaborations!</p>
-      </div>
+<section class="about-wrapper">
+  <div class="about-row row-left">
+    <img src="assets/images/about/about1.jpg" alt="James Carley" class="hero-image" />
+    <div class="text-block">
+      <h1>About Me</h1>
+      <p>
+        My name is James Carley. I am a Bachelor of Fine Arts (Film) graduate from Queensland University of Technology with hands-on experience across all aspects of filmmaking including directing, cinematography, editing, and screenwriting. Having already worked on professional film shoots both in production and post-production roles throughout my academic career, my passion lies in post-production editing roles, from colour grading to vision editing. Having acquired these skills, I am eager to leverage my academic training and gain hands-on experience within the film industry as a creative practitioner.
+      </p>
     </div>
-  
-    <!-- Skills Section -->
-    <div class="skills" *ngIf="skillsVisible" [@fadeIn] >
-      <h2>Skills</h2>
-      <ul>
-        <li>Cinematography</li>
-        <li>Film Editing</li>
-        <li>Directing</li>
-        <li>Screenwriting</li>
-        <li>Sound Design</li>
-      </ul>
+  </div>
+
+  <div class="about-row row-right">
+    <div class="text-block">
+      <h2>How I Got Into Filmmaking</h2>
+      <p>
+        In grade nine I was fortunate enough to go to a school that offered film and television as a subject and it became love at first sight. The ability to transcend concepts, themes, and stories formed within my head into a physical, visual format provided me a creative outlet to express myself. For the first time in my life I knew what I wanted to do when I was older. Filmmaking not only allowed me a means of storytelling, but also a plain to convey and express emotions to an audience, whether it be through comedy, drama, or horror.
+      </p>
     </div>
-  
-    <!-- Projects Section -->
-    <div class="projects" *ngIf="projectsVisible" [@fadeIn] >
-      <h2>Film Projects</h2>
-      <ul>
-        <li><strong>Project Name 1</strong> - Description, Role (e.g., Director)</li>
-        <li><strong>Project Name 2</strong> - Description, Role</li>
-      </ul>
-    </div>
-  
-    <!-- Education Section -->
-    <div class="education" *ngIf="educationVisible" [@fadeIn] >
-      <h2>Education</h2>
-      <p>Bachelor of Arts in Film Studies from [University/Film School Name]</p>
-    </div>
-  </section>
-  
-  <app-footer></app-footer>
-  
+    <img src="assets/images/about/action3.JPG" alt="On set behind camera" class="hero-image" />
+  </div>
+</section>
+
+<app-footer></app-footer>

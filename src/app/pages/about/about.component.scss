@@ -1,105 +1,65 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #F0F4F8;
-    color: white;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  /* About Me Section */
-  .about-me {
-    width: 100%;
-    max-width: 1000px;
-    text-align: center;
-    background-color: #F0F4F8;
-  }
-  
-  .about-me-title {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    color: rgb(3, 119, 18); /* Accent color */
-  }
-  
-  /* Bio Section */
-  .bio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 3rem;
-  }
-  
-  .bio-image {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  .bio-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 600px;
-    color: #bbb; /* Light grey text */
-  }
-  
-  /* Skills Section */
-  .skills {
-    margin-bottom: 3rem;
-  }
-  
-  .skills h2 {
-    font-size: 2.5rem;
-    color: rgb(3, 119, 18);
-  }
-  
-  .skills ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-  }
-  
-  .skills li {
-    font-size: 1.2rem;
-    color: #ccc;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Projects Section */
-  .projects {
-    margin-bottom: 3rem;
-  }
-  
-  .projects h2 {
-    font-size: 2.5rem;
-    color: rgb(3, 119, 18);
-  }
-  
-  .projects ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .projects li {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Education Section */
-  .education {
-    margin-bottom: 3rem;
-  }
-  
-  .education h2 {
-    font-size: 2.5rem;
-    color: rgb(3, 119, 18);
-  }
-  
-  .education p {
-    font-size: 1.2rem;
-    color: #ccc;
-  }
-  
+.about-wrapper {
+  width: 100%;
+  background-color: #f0f4f8;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.about-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row-left .hero-image {
+  order: 1;
+}
+
+.row-left .text-block {
+  order: 2;
+}
+
+.row-right .hero-image {
+  order: 2;
+}
+
+.row-right .text-block {
+  order: 1;
+}
+
+.hero-image {
+  flex: 1 1 50%;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.text-block {
+  flex: 1 1 40%;
+  max-width: 500px;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #000;
+  position: relative;
+  top: -20px; /* subtle offset for artsy layout */
+}
+
+.text-block h1,
+.text-block h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(145, 180, 149); // your accent color
+}
+
+.text-block p {
+  color: #111;
+}
