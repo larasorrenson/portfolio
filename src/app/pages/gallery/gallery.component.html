@@ -1,22 +1,46 @@
-<!-- gallery.component.html -->
 <section class="gallery">
-  <h1>Gallery</h1>
+  <h1>Portfolio</h1>
 
-  <div class="before-after-container">
-    <div class="after-image" [ngStyle]="{ width: afterImageWidth + '%' }">
-      <img [src]="afterImage" alt="After Image" />
-    </div>
-
-    <img [src]="beforeImage" class="before-image" alt="Before Image" />
-
-    <input
-      type="range"
-      class="slider"
-      min="0"
-      max="100"
-      [(ngModel)]="afterImageWidth"
-    />
+  <div class="featured-images">
+    <figure>
+      <img src="assets/images/shot1.jpg" alt="Film still">
+      <figcaption>A suspenseful moment lit with a single key light</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/images/shot2.jpg" alt="Film still">
+      <figcaption>Natural light scene with reflective fill</figcaption>
+    </figure>
   </div>
 
+  <div class="before-after-section">
+    <h2>Color Grading Showcase</h2>
+
+    <app-image-slider
+      [before]="'assets/images/before.jpg'"
+      [after]="'assets/images/after.jpg'">
+    </app-image-slider>
+    <p>This frame was shot flat and graded for warm cinematic tones.</p>
+
+    <app-image-slider
+      [before]="'assets/images/before.jpg'"
+      [after]="'assets/images/after.jpg'">
+    </app-image-slider>
+    <p>Cold blue look to emphasize isolation and tone.</p>
+  </div>
+
+  <!-- Optional sections below -->
+  <div class="bts-section">
+    <h2>Behind the Scenes</h2>
+    <img src="assets/images/bts1.jpg" alt="On set">
+    <p>Setting up for a night exterior with practicals and bounce cards.</p>
+  </div>
+
+  <div class="scene-clips">
+    <h2>Selected Scene Clips</h2>
+    <video controls width="100%">
+      <source src="assets/videos/scene1.mp4" type="video/mp4">
+    </video>
+    <p>I directed and color-graded this short thriller sequence.</p>
+  </div>
   <app-footer></app-footer>
 </section>

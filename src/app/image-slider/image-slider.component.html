@@ -1,0 +1,9 @@
+<div class="slider-wrapper"
+     #sliderWrapper
+     (mousemove)="onMouseMove($event)"
+     (touchmove)="onTouchMove($event)">
+  <img class="slider-layout" [src]="after" alt="layout image">
+  <img class="slider-before" [src]="before" alt="Before">
+  <img class="slider-after" [src]="after" alt="After" [ngStyle]="{ 'clip-path': clipPath }">
+  <div class="slider-handle" [ngStyle]="{ left: handlePosition + '%' }"></div>
+</div>

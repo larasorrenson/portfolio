@@ -1,10 +1,11 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { FooterComponent } from '../../footer/footer.component';
+import { ImageSliderComponent } from '../../image-slider/image-slider.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FooterComponent],
+  imports: [FooterComponent, ImageSliderComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })

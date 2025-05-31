@@ -1,10 +1,11 @@
 :host {
   display: block;
-  height: 100vh;
+  height: 100%;
   background-color: #F0F4F8;
-  color: #000000;
-  padding: 2rem;
+  padding: 30vh 10vw;
+  max-height: 100vh;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .contact-container {

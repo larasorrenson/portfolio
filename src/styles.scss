@@ -3,11 +3,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif; /* Add your preferred font */
+    background-color: #F0F4F8;
   }
   
   main {
     margin-top: 50px; /* Default value for margin-top for larger screens */
-    background-color:#555;
+    // background-color:#555;
+    background-color: #F0F4F8;
   }
   
   /* Your existing navbar styles remain the same */
@@ -16,7 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #367049;
+    // background-color: #367049;
     color: white;
     position: fixed;
     width: 100%;
