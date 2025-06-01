@@ -13,33 +13,51 @@ import { CommonModule } from '@angular/common';
 })
 export class HomeComponent {
   @ViewChild('carousel', { static: true }) carouselRef!: ElementRef<HTMLDivElement>;
-  constructor(
-    private router: Router
-  ) { }
+
+  constructor(private router: Router) {}
 
   projects = [
     {
-      image: 'assets/images/image1.jpg',
-      name: 'Project One',
-      link: '/project/project-1'
+      image: '',
+      name: 'When Hippos Fly',
+      link: '/project/whenHipposFly'
     },
     {
-      image: 'assets/images/image1.jpg',
-      name: 'Project Two',
-      link: '/project/project-2'
+      image: '',
+      name: 'Running Out of Love',
+      link: '/project/runningOutOfLove'
     },
     {
-      image: 'assets/images/image1.jpg',
-      name: 'Project Three',
-      link: '/project/project-3'
+      image: '',
+      name: 'Paddington House',
+      link: '/project/paddingtonHouse'
     },
     {
-      image: 'assets/images/image1.jpg',
-      name: 'Project Four',
-      link: '/project/project-4'
+      image: '',
+      name: 'Boba Tea Chicken',
+      link: '/project/bobaTeaChicken'
+    },
+    {
+      image: '',
+      name: 'Unto Death',
+      link: '/project/untoDeath'
+    },
+    {
+      image: '',
+      name: 'Recounting the Bruises',
+      link: '/project/recountingTheBruises'
+    },
+    {
+      image: '',
+      name: 'Ticket NO.42',
+      link: '/project/ticketNo42'
+    },
+    {
+      image: '',
+      name: 'Toxic Shock',
+      link: '/project/toxicShock'
     }
   ];
-
 
   scrollCarousel(direction: 'left' | 'right') {
     const carousel = this.carouselRef.nativeElement;
@@ -57,5 +75,4 @@ export class HomeComponent {
   navToProject(path: string) {
     this.router.navigate([path]);
   }
-
 }
