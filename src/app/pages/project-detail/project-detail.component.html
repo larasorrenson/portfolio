@@ -1,40 +1,41 @@
 <section class="project-detail" *ngIf="project">
-    <div class="header-image" [ngStyle]="{ 'background-image': 'url(' + project.image + ')' }">
-        <div class="overlay">
-            <h1 class="title">{{ project.title }}</h1>
-            <p class="type">{{ project.type }}</p>
-        </div>
+  <div class="header-image" [ngStyle]="{ 'background-image': 'url(' + project.image + ')' }">
+    <div class="overlay">
+      <h1 class="title">{{ project.title }}</h1>
+      <p class="type">{{ project.type }}</p>
     </div>
+  </div>
 
-    <div class="content">
-        <p class="back-link" (click)="goBack()">← Back to Portfolio</p>
-        <p class="roles"><strong>Roles:</strong> {{ project.roles }}</p>
-        <p class="synopsis">{{ project.synopsis }}</p>
+  <div class="content">
+    <p class="back-link" (click)="goBack()">← Back to Portfolio</p>
+    <p class="roles"><strong>Roles:</strong> {{ project.roles }}</p>
+    <p class="synopsis">{{ project.synopsis }}</p>
 
-        <div *ngIf="project.link" class="video-wrapper">
-            <div *ngIf="safeVideoUrl" class="video-wrapper">
-                <iframe [src]="safeVideoUrl" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <div *ngIf="project.gallery?.length" class="gallery">
-            <h2>Gallery</h2>
-            <div class="images">
-                <img *ngFor="let img of project.gallery" [src]="img" [alt]="project.title" />
-            </div>
-        </div>
+    <div *ngIf="project.link" class="video-wrapper">
+      <div *ngIf="safeVideoUrl" class="video-wrapper">
+        <iframe [src]="safeVideoUrl" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
     </div>
+  </div>
 
-    <div class="project-nav">
-        <p *ngIf="prevProject" class="nav-link" (click)="navigateToProject(prevProject.id)">
-            ← {{ prevProject.title }}
-        </p>
-        <p *ngIf="nextProject" class="nav-link" (click)="navigateToProject(nextProject.id)">
-            {{ nextProject.title }} →
-        </p>
+  <!-- Move gallery here -->
+  <div *ngIf="project.gallery?.length" class="gallery">
+    <h2>Gallery</h2>
+    <div class="images">
+      <img *ngFor="let img of project.gallery" [src]="img" [alt]="project.title" />
     </div>
+  </div>
 
-    <app-footer></app-footer>
+  <div class="project-nav">
+    <p *ngIf="prevProject" class="nav-link" (click)="navigateToProject(prevProject.id)">
+      ← {{ prevProject.title }}
+    </p>
+    <p *ngIf="nextProject" class="nav-link" (click)="navigateToProject(nextProject.id)">
+      {{ nextProject.title }} →
+    </p>
+  </div>
+
+  <app-footer></app-footer>
 </section>
