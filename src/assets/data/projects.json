@@ -1,52 +1,12 @@
 [
   {
-    "id": "WhenHipposFly",
-    "title": "When Hippos Fly",
-    "type": "Stop Motion Film",
-    "roles": "Director, Writer, Producer, Cinematographer, Editor",
-    "synopsis": "When Hippos fly is a short stop-motion experimental film that follows the story of Allan, a flying hippopotamus who has just crashed in a field. Allan brushes himself off and fixes up his wings before optimistically continuing his journey. However, as our subject sets off, in the distance, he hears, a roar from the heavens, as a storm cloud grows near.",
-    "image": "",
-    "gallery": [],
-    "link": "https://youtu.be/Pz1meLOsFXU"
-  },
-  {
-    "id": "RunningOutOfLove",
-    "title": "Running Out of Love",
-    "type": "Music Video",
-    "roles": "Co-producer, Director of Photography, Editor",
-    "synopsis": "Running Out of Love, directed by Joely Riordan, required us to produce a music video for a musician. This project taught me the importance of creative collaboration when working for a client. From scheduling to formulating the narrative, communication with our client was key to ensuring the creative outcome was what both parties wanted to work towards.\n\nThe narrative follows our musician in a toxic relationship on the brink of collapse as she’s about to perform on stage. Suddenly her boyfriend cancels last-minute, failing to turn up for her performance. As a result, our artist is forced to expel her frustration and disappointment into her performance of her song ‘Running Out of Love’.",
-    "image": "",
-    "gallery": [],
-    "link": "https://www.youtube.com/watch?v=QgWohRZaz6g"
-  },
-  {
-    "id": "PaddingtonHouse",
-    "title": "Paddington House",
-    "type": "Mockumentary",
-    "roles": "Director, Writer, Editor, Actor",
-    "synopsis": "Paddington House is a pilot episode designed for a short-web series that follows the residents of a sharehouse and the struggles they must face when living together. The most challenging aspect of making this film was our heavy reliance on improvisation. I had created a rough screenplay for key plot points I wanted to shoot, but left it up to the actors' improvisation to determine how these scenes would develop and resolve. To effectively achieve this I decided to develop the backstories for each character heavily, giving them very clear personalities and strong differing beliefs, so that when it came to the performance, my co-star James Patino and I, could easily think, how would my character respond in this situation?",
-    "image": "",
-    "gallery": [],
-    "link": "https://youtu.be/W2RuDFMbjSU"
-  },
-  {
-    "id": "BobaTeaChicken",
-    "title": "Boba Tea Chicken",
-    "type": "Advertisement",
-    "roles": "Production Assistant, Editor",
-    "synopsis": "This Boba Tea Chicken advertisement, directed by George Wang, is a 15 second advert for Boba Chicken in Kelvin Grove, and was used as an advertisement in our gameshow Toxic Shock. The rigid requirements of the task such as it having to be precisely 15 seconds, not a frame over or under, simulated the industry standard of advertising in the film industry. This, accompanied with working with a real business has provided me invaluable insight and experience in marketing and developing effective advertising techniques through a film format.",
-    "image": "",
-    "gallery": [],
-    "link": "https://youtu.be/PbM05a7akaA"
-  },
-  {
     "id": "UntoDeath",
     "title": "Unto Death",
     "type": "Short Film",
     "roles": "Colour Editor, Assistant Sound Editor",
     "synopsis": "Unto Death, directed by Eli Garrahy, is a short narrative thriller about a couple who crash their car after hitting a wild animal on the road. Suffering from a head injury, the protagonist forms a seemingly supernatural bond with the injured animal and is driven to insanity in attempts to protect the animal. This film was the first time I was required to go in-depth with colour grading. It taught me many new skills including learning how to use the editing software Davinci Resolve for colour grading. This project proved to be incredibly difficult as a total of four different brands of cameras were used across the production along with a range of different environments in different lighting setups. As a result, making sure every shot looked consistent was the primary challenge, but in return provided much appreciated experience in colour grading.",
     "image": "'assets/images/colourgrading/colour_SCARYCG.png'",
-    "gallery": ["assets/images/colourgrading/colour_SCARYCG.png"],
+    "gallery": [ "assets/images/colourgrading/colour_SCARYCG.png" ],
     "link": ""
   },
   {
@@ -60,6 +20,26 @@
     "link": ""
   },
   {
+    "id": "BobaTeaChicken",
+    "title": "Boba Tea Chicken",
+    "type": "Advertisement",
+    "roles": "Production Assistant, Editor",
+    "synopsis": "This Boba Tea Chicken advertisement, directed by George Wang, is a 15 second advert for Boba Chicken in Kelvin Grove, and was used as an advertisement in our gameshow Toxic Shock. The rigid requirements of the task such as it having to be precisely 15 seconds, not a frame over or under, simulated the industry standard of advertising in the film industry. This, accompanied with working with a real business has provided me invaluable insight and experience in marketing and developing effective advertising techniques through a film format.",
+    "image": "",
+    "gallery": [],
+    "link": "https://youtu.be/PbM05a7akaA"
+  },
+  {
+    "id": "RunningOutOfLove",
+    "title": "Running Out of Love",
+    "type": "Music Video",
+    "roles": "Co-producer, Director of Photography, Editor",
+    "synopsis": "Running Out of Love, directed by Joely Riordan, required us to produce a music video for a musician. This project taught me the importance of creative collaboration when working for a client. From scheduling to formulating the narrative, communication with our client was key to ensuring the creative outcome was what both parties wanted to work towards.\n\nThe narrative follows our musician in a toxic relationship on the brink of collapse as she’s about to perform on stage. Suddenly her boyfriend cancels last-minute, failing to turn up for her performance. As a result, our artist is forced to expel her frustration and disappointment into her performance of her song ‘Running Out of Love’.",
+    "image": "",
+    "gallery": [],
+    "link": "https://www.youtube.com/watch?v=QgWohRZaz6g"
+  },
+  {
     "id": "TicketNo42",
     "title": "Ticket NO. 42",
     "type": "Short Film",
@@ -70,6 +50,16 @@
     "link": ""
   },
   {
+    "id": "PaddingtonHouse",
+    "title": "Paddington House",
+    "type": "Mockumentary",
+    "roles": "Director, Writer, Editor, Actor",
+    "synopsis": "Paddington House is a pilot episode designed for a short-web series that follows the residents of a sharehouse and the struggles they must face when living together. The most challenging aspect of making this film was our heavy reliance on improvisation. I had created a rough screenplay for key plot points I wanted to shoot, but left it up to the actors' improvisation to determine how these scenes would develop and resolve. To effectively achieve this I decided to develop the backstories for each character heavily, giving them very clear personalities and strong differing beliefs, so that when it came to the performance, my co-star James Patino and I, could easily think, how would my character respond in this situation?",
+    "image": "",
+    "gallery": [],
+    "link": "https://youtu.be/W2RuDFMbjSU"
+  },
+  {
     "id": "ToxicShock",
     "title": "Toxic Shock",
     "type": "Game Show",
@@ -78,5 +68,15 @@
     "image": "",
     "gallery": [],
     "link": "https://www.youtube.com/watch?v=GV2N5lBgiO8"
-  }
+  },
+  {
+    "id": "WhenHipposFly",
+    "title": "When Hippos Fly",
+    "type": "Stop Motion Film",
+    "roles": "Director, Writer, Producer, Cinematographer, Editor",
+    "synopsis": "When Hippos fly is a short stop-motion experimental film that follows the story of Allan, a flying hippopotamus who has just crashed in a field. Allan brushes himself off and fixes up his wings before optimistically continuing his journey. However, as our subject sets off, in the distance, he hears, a roar from the heavens, as a storm cloud grows near.",
+    "image": "",
+    "gallery": [],
+    "link": "https://youtu.be/Pz1meLOsFXU"
+  }  
 ]
