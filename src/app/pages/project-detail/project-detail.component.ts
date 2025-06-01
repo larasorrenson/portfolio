@@ -50,6 +50,6 @@ export class ProjectDetailComponent implements OnInit {
   }
 
   goBack() {
-    this.router.navigate(['/gallery']);
+    this.router.navigate(['/portfolio']);
   }
 }

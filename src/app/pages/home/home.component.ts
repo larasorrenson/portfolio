@@ -20,42 +20,42 @@ export class HomeComponent {
     {
       image: '',
       name: 'When Hippos Fly',
-      link: '/project/whenHipposFly'
+      link: '/project/WhenHipposFly'
     },
     {
       image: '',
       name: 'Running Out of Love',
-      link: '/project/runningOutOfLove'
+      link: '/project/RunningOutOfLove'
     },
     {
       image: '',
       name: 'Paddington House',
-      link: '/project/paddingtonHouse'
+      link: '/project/PaddingtonHouse'
     },
     {
       image: '',
       name: 'Boba Tea Chicken',
-      link: '/project/bobaTeaChicken'
+      link: '/project/BobaTeaChicken'
     },
     {
       image: '',
       name: 'Unto Death',
-      link: '/project/untoDeath'
+      link: '/project/UntoDeath'
     },
     {
       image: '',
       name: 'Recounting the Bruises',
-      link: '/project/recountingTheBruises'
+      link: '/project/RecountingTheBruises'
     },
     {
       image: '',
       name: 'Ticket NO.42',
-      link: '/project/ticketNo42'
+      link: '/project/TicketNo42'
     },
     {
       image: '',
       name: 'Toxic Shock',
-      link: '/project/toxicShock'
+      link: '/project/ToxicShock'
     }
   ];
 
@@ -69,7 +69,7 @@ export class HomeComponent {
   }
 
   navToGallery() {
-    this.router.navigate(['/gallery']);
+    this.router.navigate(['/portfolio']);
   }
 
   navToProject(path: string) {

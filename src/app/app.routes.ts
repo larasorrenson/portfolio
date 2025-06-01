@@ -9,6 +9,7 @@ export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'gallery', component: GalleryComponent },
+  { path: 'portfolio', component: GalleryComponent },
+  { path: 'gallery', redirectTo: 'portfolio', pathMatch: 'full' },
   { path: 'project/:id', component: ProjectDetailComponent },
 ];
