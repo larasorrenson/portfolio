@@ -116,4 +116,30 @@
         }
     }
 
+    .back-link,
+    .project-nav .nav-link {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: rgb(145, 180, 149);
+        cursor: pointer;
+        text-decoration: underline;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: rgb(96, 121, 99);
+        }
+    }
+
+    .back-link {
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    .project-nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 800px;
+        margin: 3rem auto 2rem;
+    }
+
 }

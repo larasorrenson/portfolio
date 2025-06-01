@@ -7,7 +7,7 @@
     </div>
 
     <div class="content">
-        <button class="back-button" (click)="goBack()">Back to Portfolio</button>
+        <p class="back-link" (click)="goBack()">← Back to Portfolio</p>
         <p class="roles"><strong>Roles:</strong> {{ project.roles }}</p>
         <p class="synopsis">{{ project.synopsis }}</p>
 
@@ -28,12 +28,12 @@
     </div>
 
     <div class="project-nav">
-        <button *ngIf="prevProject" class="button" (click)="navigateToProject(prevProject.id)">
+        <p *ngIf="prevProject" class="nav-link" (click)="navigateToProject(prevProject.id)">
             ← {{ prevProject.title }}
-        </button>
-        <button *ngIf="nextProject" class="button" (click)="navigateToProject(nextProject.id)">
+        </p>
+        <p *ngIf="nextProject" class="nav-link" (click)="navigateToProject(nextProject.id)">
             {{ nextProject.title }} →
-        </button>
+        </p>
     </div>
 
     <app-footer></app-footer>
