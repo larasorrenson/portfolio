@@ -15,7 +15,7 @@
     "type": "Documentary",
     "roles": "Data Wrangler, Vision Editor, Assistant Colour Editor",
     "synopsis": "Recounting the Bruises, directed by Jamie Robinson, is a documentary following the story of a domestic violence survivor who had to endure over 10 years of abuse. As an editor, this project has been by far the most confronting, both in subject matter and scale, compared to previous projects I’ve worked on. I feel this has been the most important film I have been involved in in terms of potential impact this film holds. Tackling such a major issue in Australia and the world that has such a devastating impact on so many families and individuals, I am so grateful to have been given the opportunity to work on such a personal project that speaks on greater societal problems. A challenge I faced while editing this documentary was finding a balance between the highs and lows of the victim's interview. With so much tragedy in a story it was vital to include some light-heartedness to avoid overbearing the audience with sadness, lessening the emotional impact of the unfolding tragedies that took place. This meant balancing the emotional journey of the story through pacing and finding moments throughout interviews where her natural sense of humour would shine through. It was through these brief moments I was able to instil a sense of comfort and form an empathetic link between the victim and the audience, which in return made the lows of her story all the more impactful.",
-    "image": "",
+    "image": "'assets/images/colourgrading/colour_SCARYCG.png'",
     "gallery": [],
     "link": ""
   },
@@ -25,8 +25,8 @@
     "type": "Advertisement",
     "roles": "Production Assistant, Editor",
     "synopsis": "This Boba Tea Chicken advertisement, directed by George Wang, is a 15 second advert for Boba Chicken in Kelvin Grove, and was used as an advertisement in our gameshow Toxic Shock. The rigid requirements of the task such as it having to be precisely 15 seconds, not a frame over or under, simulated the industry standard of advertising in the film industry. This, accompanied with working with a real business has provided me invaluable insight and experience in marketing and developing effective advertising techniques through a film format.",
-    "image": "",
-    "gallery": [],
+    "image": "'assets/images/stills/b1.png'",
+    "gallery": [ "assets/images/stills/b1.png", "assets/images/stills/b2.png", "assets/images/stills/b3.png", "assets/images/stills/b4.png", "assets/images/stills/b5.png" ],
     "link": "https://www.youtube.com/embed/PbM05a7akaA?si=2XcJrRLN0kmYXjkJ"
   },
   {
@@ -35,8 +35,8 @@
     "type": "Music Video",
     "roles": "Co-producer, Director of Photography, Editor",
     "synopsis": "Running Out of Love, directed by Joely Riordan, required us to produce a music video for a musician. This project taught me the importance of creative collaboration when working for a client. From scheduling to formulating the narrative, communication with our client was key to ensuring the creative outcome was what both parties wanted to work towards.\n\nThe narrative follows our musician in a toxic relationship on the brink of collapse as she’s about to perform on stage. Suddenly her boyfriend cancels last-minute, failing to turn up for her performance. As a result, our artist is forced to expel her frustration and disappointment into her performance of her song ‘Running Out of Love’.",
-    "image": "",
-    "gallery": [],
+    "image": "'assets/images/stills/r2.png'",
+    "gallery": [ "assets/images/stills/r1.png", "assets/images/stills/r2.png", "assets/images/stills/r3.png", "assets/images/stills/r4.png", "assets/images/stills/r5.png" ],
     "link": "https://www.youtube.com/embed/QgWohRZaz6g?si=H0opatvt_IQjnXJF"
   },
   {
@@ -45,7 +45,7 @@
     "type": "Short Film",
     "roles": "Vision Editor",
     "synopsis": "Ticket No. 42, directed by Ewan Anderson and James Patino, is a short film project I worked on as the vision editor. The focus of this film was utilising techniques in the snappy dialogue and quick cuts, purposefully breaking film rules such as the 180 degree rule to build suspense and tension within a short period of time. This film was made as part of a one-week-production project whereby everything from pre-production to post-production is completed within a week. This style of filmmaking is obviously very reliant on effective communication and having a quick turnaround. By putting every aspect of the filmmaking process under strict time constraints it forced me to think quickly on my feet and act based on my gut feel. By editing this way it trains me to optimise my editing style, from organisation to structuring scenes with little to no prep time to form a cohesive and compelling narrative.",
-    "image": "",
+    "image": "'assets/images/stills/r3.png'",
     "gallery": [],
     "link": ""
   },
@@ -55,8 +55,8 @@
     "type": "Mockumentary",
     "roles": "Director, Writer, Editor, Actor",
     "synopsis": "Paddington House is a pilot episode designed for a short-web series that follows the residents of a sharehouse and the struggles they must face when living together. The most challenging aspect of making this film was our heavy reliance on improvisation. I had created a rough screenplay for key plot points I wanted to shoot, but left it up to the actors' improvisation to determine how these scenes would develop and resolve. To effectively achieve this I decided to develop the backstories for each character heavily, giving them very clear personalities and strong differing beliefs, so that when it came to the performance, my co-star James Patino and I, could easily think, how would my character respond in this situation?",
-    "image": "",
-    "gallery": [],
+    "image": "'assets/images/stills/p1.png'",
+    "gallery": [ "assets/images/stills/p1.png", "assets/images/stills/p2.png", "assets/images/stills/p3.png", "assets/images/stills/p4.png", "assets/images/stills/p5.png" ],
     "link": "https://www.youtube.com/embed/W2RuDFMbjSU?si=Ybq3UaKGZfft37fz"
   },
   {
@@ -65,8 +65,8 @@
     "type": "Game Show",
     "roles": "Lighting Director",
     "synopsis": "Toxic Shock is a game show where partners go up against each other to determine who is considered more ‘toxic.’ The gameshow dares couples to reveal their inner toxic beliefs in a comedic fashion to win the crowd's vote as the most toxic partner. This project was my first experience working in a multi-camera, live broadcast production, and was the largest production team I have worked on. This project was the most intensive lighting setup I have ever had to organise and setup. Syncing roughly 15 bluetooth lighting rigs as well as overhead and backstage lighting accompanied with a smoke machine I gained invaluable experience in navigating this lighting equipment, and controlling these lighting rigs during ‘live’ broadcasting.",
-    "image": "",
-    "gallery": [],
+    "image": "'assets/images/stills/t1.png'",
+    "gallery": [ "assets/images/stills/t1.png", "assets/images/stills/t2.png", "assets/images/stills/t4.png", "assets/images/stills/t5.png", "assets/images/stills/t6.png" ],
     "link": "https://www.youtube.com/embed/GV2N5lBgiO8?si=EvnqkQc9mXvGpw1b"
   },
   {
@@ -75,8 +75,8 @@
     "type": "Stop Motion Film",
     "roles": "Director, Writer, Producer, Cinematographer, Editor",
     "synopsis": "When Hippos fly is a short stop-motion experimental film that follows the story of Allan, a flying hippopotamus who has just crashed in a field. Allan brushes himself off and fixes up his wings before optimistically continuing his journey. However, as our subject sets off, in the distance, he hears, a roar from the heavens, as a storm cloud grows near.",
-    "image": "",
-    "gallery": [],
+    "image": "'assets/images/stills/h1.png'",
+    "gallery": [ "assets/images/stills/h1.png", "assets/images/stills/h2.png", "assets/images/stills/h3.png", "assets/images/stills/h4.png", "assets/images/stills/h5.png" ],
     "link": "https://www.youtube.com/embed/Pz1meLOsFXU?si=v7osB8P1aY2dAAk1"
   }  
 ]
