@@ -12,4 +12,5 @@ export const routes: Routes = [
   { path: 'portfolio', component: GalleryComponent },
   { path: 'gallery', redirectTo: 'portfolio', pathMatch: 'full' },
   { path: 'project/:id', component: ProjectDetailComponent },
+  { path: '**', component: HomeComponent },
 ];
