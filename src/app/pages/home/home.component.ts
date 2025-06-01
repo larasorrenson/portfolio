@@ -1,13 +1,13 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { FooterComponent } from '../../footer/footer.component';
 import { ImageSliderComponent } from '../../image-slider/image-slider.component';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FooterComponent, ImageSliderComponent, CommonModule],
+  imports: [FooterComponent, ImageSliderComponent, CommonModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
@@ -18,42 +18,42 @@ export class HomeComponent {
 
   projects = [
     {
-      image: '',
+      image: 'assets/images/stills/h1.png',
       name: 'When Hippos Fly',
       link: '/project/WhenHipposFly'
     },
     {
-      image: '',
+      image: 'assets/images/stills/r2.png',
       name: 'Running Out of Love',
       link: '/project/RunningOutOfLove'
     },
     {
-      image: '',
+      image: 'assets/images/stills/p1.png',
       name: 'Paddington House',
       link: '/project/PaddingtonHouse'
     },
     {
-      image: '',
+      image: 'assets/images/stills/b1.png',
       name: 'Boba Tea Chicken',
       link: '/project/BobaTeaChicken'
     },
     {
-      image: '',
+      image: 'assets/images/colourgrading/colour_SCARYCG.png',
       name: 'Unto Death',
       link: '/project/UntoDeath'
     },
     {
-      image: '',
+      image: 'assets/images/colourgrading/colour_SCARYCG.png',
       name: 'Recounting the Bruises',
       link: '/project/RecountingTheBruises'
     },
     {
-      image: '',
+      image: 'assets/images/stills/r2.png',
       name: 'Ticket NO.42',
       link: '/project/TicketNo42'
     },
     {
-      image: '',
+      image: 'assets/images/stills/t1.png',
       name: 'Toxic Shock',
       link: '/project/ToxicShock'
     }
