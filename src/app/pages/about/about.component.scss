@@ -1,10 +1,12 @@
 .about-wrapper {
-  width: 95%;
+  width: 100%;
   background-color: #f0f4f8;
   padding: 6rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 6rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .about-row {
@@ -15,6 +17,8 @@
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .row-left .hero-image {
@@ -34,32 +38,54 @@
 }
 
 .hero-image {
-  flex: 1 1 50%;
+  flex: 1 1 300px;
   max-width: 600px;
   width: 100%;
   height: auto;
   object-fit: contain;
   border-radius: 0;
   box-shadow: none;
+  box-sizing: border-box;
 }
 
 .text-block {
-  flex: 1 1 40%;
+  flex: 1 1 300px;
   max-width: 500px;
+  width: 100%;
   font-size: 1.125rem;
   line-height: 1.8;
   color: #000;
+  box-sizing: border-box;
   position: relative;
-  top: -20px; /* subtle offset for artsy layout */
 }
 
 .text-block h1,
 .text-block h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: rgb(145, 180, 149); // your accent color
+  color: rgb(145, 180, 149); // accent color
 }
 
 .text-block p {
   color: #111;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .about-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-image,
+  .text-block {
+    max-width: 90%;
+    flex: 1 1 100%;
+  }
+
+  .text-block {
+    top: 0;
+  }
 }
