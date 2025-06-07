@@ -213,16 +213,23 @@
 
   .grading-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    width: 90vw;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 2rem;
 
     app-image-slider {
       width: 100%;
-      max-width: 600px;
-      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
     }
   }
 }
