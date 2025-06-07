@@ -18,17 +18,7 @@ import { CommonModule } from '@angular/common';
   ]
 })
 export class AboutComponent implements OnInit {
-  titleVisible = false;
-  bioVisible = false;
-  skillsVisible = false;
-  projectsVisible = false;
-  educationVisible = false;
 
   ngOnInit() {
-    setTimeout(() => this.titleVisible = true, 500);
-    setTimeout(() => this.bioVisible = true, 1000);
-    setTimeout(() => this.skillsVisible = true, 1500);
-    setTimeout(() => this.projectsVisible = true, 2000);
-    setTimeout(() => this.educationVisible = true, 2500);
   }
 }

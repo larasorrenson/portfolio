@@ -6,6 +6,9 @@
   max-height: 100vh;
   box-sizing: border-box;
   overflow: hidden;
+  @media (max-width: 768px) {
+    padding: 5vh 4vw;
+  }
 }
 
 .contact-container {
