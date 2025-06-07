@@ -1,57 +1,55 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #F0F4F8;
-  color: white;
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
   right: 0;
-  box-sizing: border-box;
+  padding: 1rem 2rem;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 1000;
-  overflow: hidden;
 }
 
-.navbar .logo a {
-  color: black;
-  font-size: 1.5rem;
+.logo a {
   text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
 }
 
+/* Desktop nav links */
 .nav-links {
   display: flex;
   gap: 1.5rem;
 
-  &.mobile {
-    flex-direction: column;
-    width: 100%;
-    background-color: #333;
-    padding: 1rem 0;
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &.active {
+      background-color: rgb(145, 180, 149);
+      color: white;
+    }
+
+    &:hover {
+      background-color: #747474;
+      color: white;
+    }
   }
 }
 
-.nav-links a {
-  color: black;
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 0.5rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+/* Hide nav-links on mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
 }
 
-.nav-links a:hover {
-  background-color: #747474;
-  color: #fff;
-}
-
-.nav-links .active {
-  background-color: rgb(145, 180, 149);
-  color: white;
-}
-
+/* Hamburger - mobile only */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -67,14 +65,67 @@
     display: block;
     height: 3px;
     width: 100%;
-    background-color: white;
-    border-radius: 0;
+    background-color: black;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
   }
 }
 
-/* Show hamburger only on mobile */
-@media (max-width: 768px) {
-  .hamburger {
+/* Slide-in menu */
+.side-menu {
+  display: none;
+
+  @media (max-width: 768px) {
     display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+    gap: 1.5rem;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%); // Hidden off-screen to the right
+    transition: transform 0.3s ease-in-out;
+    z-index: 1002;
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.2rem;
+
+      &.active {
+        background-color: rgb(145, 180, 149);
+        color: white;
+        padding: 0.5rem;
+        border-radius: 4px;
+      }
+
+      &:hover {
+        background-color: #747474;
+        color: white;
+      }
+    }
+
+    &.open {
+      transform: translateX(0); // Slide into view
+    }
+  }
+}
+
+/* Overlay */
+.overlay {
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
   }
 }
