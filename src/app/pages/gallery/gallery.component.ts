@@ -24,7 +24,6 @@ export class GalleryComponent implements OnInit {
   ngOnInit(): void {
     this.http.get<any[]>('assets/data/projects.json').subscribe((data) => {
       this.projects = data;
-      console.log(this.projects);
     });
   }
 }
