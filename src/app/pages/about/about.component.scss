@@ -63,14 +63,13 @@
 .text-block h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: rgb(145, 180, 149); // accent color
+  color: rgb(145, 180, 149);
 }
 
 .text-block p {
   color: #111;
 }
 
-/* Responsive layout */
 @media (max-width: 768px) {
   .about-row {
     flex-direction: column;

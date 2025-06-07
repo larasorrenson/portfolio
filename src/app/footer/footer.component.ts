@@ -34,7 +34,6 @@ export class FooterComponent implements AfterViewInit {
   button.addEventListener('mousemove', handleMouseMove);
   button.addEventListener('mouseleave', handleMouseLeave);
 
-  // Cleanup listeners on component destroy
   return () => {
     button.removeEventListener('mousemove', handleMouseMove);
     button.removeEventListener('mouseleave', handleMouseLeave);

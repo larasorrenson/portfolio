@@ -14,7 +14,7 @@ export class ImageSliderComponent implements OnInit {
 
   @ViewChild('sliderWrapper', { static: true }) sliderWrapper!: ElementRef;
 
-  handlePosition = 50; // %
+  handlePosition = 50;
   clipPath = 'inset(0 50% 0 0)';
   isDragging = false;
 
@@ -60,7 +60,7 @@ export class ImageSliderComponent implements OnInit {
 
   @HostListener('window:resize')
   onResize() {
-    this.updateClipPath(); // Optional: could use to realign anything on resize
+    this.updateClipPath();
   }
 
   onMouseMove(event: MouseEvent) {

@@ -34,7 +34,6 @@
   color: black;
 }
 
-/* Desktop nav links */
 .nav-links {
   display: flex;
   gap: 1.5rem;
@@ -59,14 +58,12 @@
   }
 }
 
-/* Hide nav-links on mobile */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
   }
 }
 
-/* Hamburger - mobile only */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -90,7 +87,6 @@
   }
 }
 
-/* Slide-in menu */
 .side-menu {
   display: none;
 
@@ -106,7 +102,7 @@
     padding: 4rem 1.5rem;
     gap: 1.5rem;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    transform: translateX(100%); // Hidden off-screen to the right
+    transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     z-index: 1002;
 
@@ -129,12 +125,11 @@
     }
 
     &.open {
-      transform: translateX(0); // Slide into view
+      transform: translateX(0);
     }
   }
 }
 
-/* Overlay */
 .overlay {
   @media (max-width: 768px) {
     position: fixed;

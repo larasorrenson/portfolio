@@ -1,5 +1,4 @@
 <nav class="navbar">
-  <!-- Group logo and hamburger -->
   <div class="logo-container">
     <div class="logo">
       <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
@@ -7,7 +6,6 @@
       </a>
     </div>
 
-    <!-- Hamburger button (mobile only) -->
     <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle navigation">
       <span></span>
       <span></span>
@@ -15,7 +13,6 @@
     </button>
   </div>
 
-  <!-- Desktop nav links -->
   <div class="nav-links">
     <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
     <a routerLink="/about" routerLinkActive="active">About</a>
@@ -23,7 +20,6 @@
     <a routerLink="/contact" routerLinkActive="active">Contact</a>
   </div>
 
-  <!-- Slide-in mobile menu -->
   <div class="side-menu" [class.open]="isMenuOpen">
     <a (click)="closeMenu()" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
     <a (click)="closeMenu()" routerLink="/about" routerLinkActive="active">About</a>
@@ -31,6 +27,5 @@
     <a (click)="closeMenu()" routerLink="/contact" routerLinkActive="active">Contact</a>
   </div>
 
-  <!-- Overlay -->
   <div class="overlay" *ngIf="isMenuOpen" (click)="closeMenu()"></div>
 </nav>

@@ -10,13 +10,13 @@
 
   .projects-grid {
     display: grid;
-    grid-template-columns: 1fr; // default mobile: one column
+    grid-template-columns: 1fr;
     gap: 2rem;
     padding: 0 1rem;
     padding-bottom: 20px;
 
     @media (min-width: 600px) {
-      grid-template-columns: repeat(2, 1fr); // two columns on tablets and up
+      grid-template-columns: repeat(2, 1fr);
       padding: 0 2rem;
       padding-bottom: 20px;
     }
