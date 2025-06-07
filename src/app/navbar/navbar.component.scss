@@ -11,6 +11,23 @@
   z-index: 1000;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .hamburger {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  }
+}
+
+
 .logo a {
   text-decoration: none;
   font-size: 1.5rem;
