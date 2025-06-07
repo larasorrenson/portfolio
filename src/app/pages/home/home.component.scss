@@ -86,7 +86,7 @@
   overflow-x: auto;
   gap: 1rem;
   scroll-behavior: smooth;
-  scrollbar-width: none;
+  padding: 0 1rem;
 
   &::-webkit-scrollbar {
     display: none;
@@ -95,16 +95,28 @@
 
 .carousel-item {
   flex: 0 0 auto;
-  width: 300px;
-  transition: transform 0.3s ease;
+  width: 650px;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
 
   img {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    width: 90vw;
   }
 
   &.view-all-card {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 16 / 9;
     background-color: #dfeee3;
     color: black;
     display: flex;
@@ -121,11 +133,17 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      padding: 0 1rem;
+      text-align: center;
     }
 
     &:hover {
       background-color: rgb(145, 180, 149);
       color: white;
+    }
+
+    @media (max-width: 768px) {
+      width: 60vw;
     }
   }
 }
@@ -244,3 +262,17 @@
     opacity: 1;
   }
 }
+
+.grading-description {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }

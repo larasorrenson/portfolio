@@ -2,7 +2,7 @@
   <section class="hero-section">
     <div class="hero-content">
       <h1>Hello, I'm James Carley</h1>
-      <p>
+      <p class="grading-description">
         A passionate filmmaker and storyteller, dedicated to capturing and creating compelling narratives. Let's bring
         your vision to life!
       </p>
@@ -20,18 +20,17 @@
 
 
   <section class="highlights-section">
-    <a class="highlights-link">
       <h2>Highlights</h2>
       <p class="grading-description">
         A few project highlights, view more on my portfolio.
       </p>
-    </a>
 
     <div class="carousel-wrapper">
       <button class="carousel-nav left" (click)="scrollCarousel('left')">&#10094;</button>
 
       <div class="carousel" #carousel>
-        <div class="carousel-item project-card" *ngFor="let project of projects" (click)="navToProject(project.id)">
+        <div class="carousel-item project-card" *ngFor="let project of projects.slice(0, 5)"
+          (click)="navToProject(project.id)">
           <img [src]="project.image" [alt]="project.title" />
           <div class="project-overlay">
             <p>{{ project.title }}</p>
@@ -72,16 +71,16 @@
         [after]="'assets/images/colourgrading/colour_MSCG.png'">
       </app-image-slider>
 
-      <app-image-slider [before]="'assets/images/colourgrading/colour_SCARY.png'"
-        [after]="'assets/images/colourgrading/colour_SCARYCG.png'">
-      </app-image-slider>
-
       <app-image-slider [before]="'assets/images/colourgrading/car.png'"
         [after]="'assets/images/colourgrading/carCG.png'">
       </app-image-slider>
 
       <app-image-slider [before]="'assets/images/colourgrading/man.png'"
         [after]="'assets/images/colourgrading/manCG.png'">
+      </app-image-slider>
+
+      <app-image-slider [before]="'assets/images/colourgrading/colour_SCARY.png'"
+        [after]="'assets/images/colourgrading/colour_SCARYCG.png'">
       </app-image-slider>
     </div>
   </section>

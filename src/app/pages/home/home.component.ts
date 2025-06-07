@@ -16,7 +16,7 @@ export class HomeComponent {
   @ViewChild('carousel', { static: true }) carouselRef!: ElementRef<HTMLDivElement>;
   projects: any[] = [];
 
-  constructor(private router: Router, private http: HttpClient) {}
+  constructor(private router: Router, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.http.get<any[]>('assets/data/projects.json').subscribe((data) => {
@@ -26,7 +26,11 @@ export class HomeComponent {
 
   scrollCarousel(direction: 'left' | 'right') {
     const carousel = this.carouselRef.nativeElement;
-    const scrollAmount = 300;
+    const item = carousel.querySelector('.carousel-item') as HTMLElement;
+
+    if (!item) return;
+
+    const scrollAmount = item.offsetWidth + 16;
     carousel.scrollBy({
       left: direction === 'left' ? -scrollAmount : scrollAmount,
       behavior: 'smooth'
@@ -40,5 +44,5 @@ export class HomeComponent {
   navToProject(id: string) {
     console.log(id)
     this.router.navigate(['/project/', id]);
-}
+  }
 }
