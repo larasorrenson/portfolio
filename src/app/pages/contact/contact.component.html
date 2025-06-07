@@ -9,12 +9,12 @@
     <form [formGroup]="form" (ngSubmit)="submit()">
       <input type="text" formControlName="name" placeholder="Your Name" [class.invalid]="isInvalid('name')" />
       <div class="error" *ngIf="isInvalid('name')">
-        Name is required.
+        Please enter your name.
       </div>
 
       <input type="email" formControlName="email" placeholder="Your Email" [class.invalid]="isInvalid('email')" />
       <div class="error" *ngIf="isInvalid('email')">
-        A valid email is required.
+        Please enter a valid email.
       </div>
 
       <textarea formControlName="message" placeholder="Your Message" style="font-family: Arial;"></textarea>
