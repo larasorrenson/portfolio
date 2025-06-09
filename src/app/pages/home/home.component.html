@@ -1,7 +1,7 @@
 <div class="home-container">
   <section class="hero-section">
     <div class="hero-content">
-      <h1>Hello, I'm James Carley</h1>
+      <h1>Hello, I'm James Carley!</h1>
       <p class="grading-description">
         A passionate filmmaker and storyteller, dedicated to capturing and creating compelling narratives.
       </p>
@@ -30,7 +30,7 @@
       <div class="carousel" #carousel>
         <div class="carousel-item project-card" *ngFor="let project of projects.slice(0, 5)"
           (click)="navToProject(project.id)">
-          <img [src]="project.image" [alt]="project.title" />
+          <img [src]="project.image" [alt]="project.title" loading="lazy"/>
           <div class="project-overlay">
             <p>{{ project.title }}</p>
           </div>
