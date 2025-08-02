@@ -1,5 +1,15 @@
 [
   {
+    "id": "DiggingDeep",
+    "title": "Digging Deep",
+    "type": "Short Film - 48 Hour Film Project",
+    "roles": "Editor, Writer, Script Supervisor, Sound Mixer",
+    "synopsis": "Digging Deep, directed by Michael Toomey, is a dark romance short film. The film follows a withdrawn young man in sessions with his psychiatrist as he clings to the memories of  a lost love through the garden they once tended. But, as her presence begins to bloom again, what lies buried beneath their shared sanctuary slowly rises to the surface. This film was made for the Brisbane 48 hour film project, of which I was nominated for an achievement in editing.",
+    "image": "assets/images/stills/d1.jpg",
+    "gallery": [ "assets/images/stills/d1.jpg", "assets/images/stills/d5.jpg", "assets/images/stills/d2.jpg", "assets/images/stills/d3.jpg", "assets/images/stills/d7.jpg", "assets/images/stills/d4.jpg", "assets/images/stills/d9.jpg", "assets/images/stills/d6.jpg", "assets/images/stills/d10.jpg", "assets/images/stills/d8.jpg" ],
+    "link": ""
+  },
+  {
     "id": "UntoDeath",
     "title": "Unto Death",
     "type": "Short Film",
@@ -78,5 +88,5 @@
     "image": "assets/images/stills/h5.png",
     "gallery": [ "assets/images/stills/h1.png", "assets/images/stills/h2.png", "assets/images/stills/h3.png", "assets/images/stills/h4.png", "assets/images/stills/h5.png" ],
     "link": "https://www.youtube.com/embed/Pz1meLOsFXU?si=v7osB8P1aY2dAAk1"
-  }  
+  }
 ]
